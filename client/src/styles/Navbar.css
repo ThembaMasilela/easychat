@@ -40,7 +40,7 @@ a {
   gap: 3rem;
 }
 
-.nav__toggler div{
+.nav__toggler div {
   width: 2.5rem;
   height: 0.2rem;
   margin: 0.4rem;
@@ -49,40 +49,40 @@ a {
 }
 
 .nav__toggler {
-    cursor: pointer;
-    display: none;
+  cursor: pointer;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .nav__toggler {
-        display: block;
-    }
-    .nav__menu {
-        position: fixed;
-        top: 6vh;
-        right: 0;
-        width: 50%;
-        height: 93vh;
-        background: rgb(0, 28, 73);
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: 0.5s ease-in
-    }
+  .nav__toggler {
+    display: block;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 6vh;
+    right: 0;
+    width: 50%;
+    height: 93vh;
+    background: rgb(0, 28, 73);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
 }
 
 /* Nav Active Class */
 
 .nav__active {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 /* Toggler Icon Animation */
-.toggle .line1{
-    transform: rotate(-45deg) translate(-4px, 5px);
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
 }
-.toggle .line2{
-    opacity: 0;
+.toggle .line2 {
+  opacity: 0;
 }
-.toggle .line3{
-    transform: rotate(45deg) translate(-4px, -5px);
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
 }

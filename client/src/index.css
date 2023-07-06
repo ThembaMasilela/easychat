@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: url("./assets/hero__bg.jpg") no-repeat fixed;
+  background-size: cover;
 }
 
 code {

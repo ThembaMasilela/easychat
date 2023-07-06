@@ -1,0 +1,40 @@
+.about-wrapper {
+  background: #e9e8ec;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.description_wrapper {
+  width: 30%;
+}
+
+.title {
+  font-size: 4.5rem;
+  color: aquamarine;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+.image {
+  height: 500px;
+  width: 800px;
+
+  background-image: url("../assets/chatengine_about.gif");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  border-radius: 10px;
+  border: 1px solid gray;
+  box-shadow: 5px 10px 8px #888888;
+}
