@@ -14,7 +14,7 @@ const Register = (props) => {
 
   const onSignup = (e) => {
     e.preventDefault();
-    setErrors(Validation({username, secret, email, first_name, last_name}))
+    setErrors(Validation({ username, secret, email, first_name, last_name }));
     axios
       .post("http://localhost:3001/signup", {
         username,
@@ -24,6 +24,7 @@ const Register = (props) => {
         last_name,
       })
       .then((r) => props.onAuth({ ...r.data, secret })) // NOTE: over-ride secret
+      .then((r) => console.log({ ...r.data, secret }))
       .catch((e) => console.log(JSON.stringify(e.response.data)));
   };
 
